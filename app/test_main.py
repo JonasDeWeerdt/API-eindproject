@@ -40,7 +40,7 @@ def test_create_animal_for_caretaker():
     headers = {"Content-Type": "application/json"}
     response = requests.post("http://127.0.0.1:8000/animals/2", json=data, headers=headers)
     assert response.status_code == 201
-    assert json.loads(response.text)["gender"] == "male" or "female" or "Male" or "Female"
+    assert json.loads(response.text.lower())["gender"] == "male" or json.loads(response.text.lower())["gender"] == "female"
     assert json.loads(response.text)["caretaker_id"] == 2
 
 
@@ -50,13 +50,14 @@ def test_read_animals():
     assert json.loads(response.text)[0]["id"] == 1  # To check if the skip is not higher than zero because then the first id would be higher then 1
     assert len(json.loads(response.text)) == 2  # To check the limit
     for id in range(0, len(json.loads(response.text))):
-        assert json.loads(response.text)[id]["gender"] == "male" or "female" or "Male" or "Female"
+        assert json.loads(response.text.lower())["gender"] == "male" or json.loads(response.text.lower())["gender"] == "female"
 
 
 def test_read_animal():
     response = requests.get('http://127.0.0.1:8000/animals/1')
     assert response.status_code == 200
-    assert json.loads(response.text)["gender"] == "male" or "female" or "Male" or "Female"
+    assert json.loads(response.text.lower())["gender"] == "male" or json.loads(response.text.lower())["gender"] == "female"
+
 
 def test_create_toy_for_animal():
     data = {"title": "rope", "description": "1 Meter long rope"}
@@ -64,6 +65,7 @@ def test_create_toy_for_animal():
     response = requests.post("http://127.0.0.1:8000/toys/2", json=data, headers=headers)
     assert response.status_code == 201
     assert json.loads(response.text)["owner_id"] == 2
+
 
 def test_read_toys():
     response = requests.get('http://127.0.0.1:8000/toys/?skip=1&limit=2')

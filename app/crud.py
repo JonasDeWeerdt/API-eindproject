@@ -20,7 +20,7 @@ def get_animals(db: Session, skip: int = 0, limit: int = 100):
 
 def create_animal(db: Session, animal: schemas.AnimalCreate,caretaker_id:int):
     hashed_name = auth.get_hash(animal.name)
-    if animal.name == "cat" or "Cat":
+    if animal.name.lower() == "cat":
         response = requests.get('https://catfact.ninja/fact')
         db_animal = models.Animal(name=animal.name, gender=animal.gender, hashed_name=hashed_name,caretaker_id=caretaker_id, fact=json.loads(response.text)["fact"])
     else:
