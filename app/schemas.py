@@ -28,6 +28,7 @@ class AnimalCreate(AnimalBase):
 
 
 class Animal(AnimalBase):
+    fact: str
     id: int
     caretaker_id: int
     toys: list[Toy] = []

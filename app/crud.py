@@ -1,5 +1,6 @@
+import json
 from sqlalchemy.orm import Session
-
+import requests
 import auth
 import models
 import schemas
@@ -10,7 +11,7 @@ def get_animal(db: Session, animal_id: int):
 
 
 def get_animal_by_name(db: Session, name: str):
-    return db.query(models.Animal).filter(models.Animal.name == name).first()
+    return db.query(models.Animal).filter(models.Animal.name == name).all()
 
 
 def get_animals(db: Session, skip: int = 0, limit: int = 100):
@@ -19,7 +20,11 @@ def get_animals(db: Session, skip: int = 0, limit: int = 100):
 
 def create_animal(db: Session, animal: schemas.AnimalCreate,caretaker_id:int):
     hashed_name = auth.get_hash(animal.name)
-    db_animal = models.Animal(name=animal.name, gender=animal.gender, hashed_name=hashed_name,caretaker_id=caretaker_id)
+    if animal.name == "cat" or "Cat":
+        response = requests.get('https://catfact.ninja/fact')
+        db_animal = models.Animal(name=animal.name, gender=animal.gender, hashed_name=hashed_name,caretaker_id=caretaker_id, fact=json.loads(response.text)["fact"])
+    else:
+        db_animal = models.Animal(name=animal.name, gender=animal.gender, hashed_name=hashed_name,caretaker_id=caretaker_id, fact="non-cat")
     db.add(db_animal)
     db.commit()
     db.refresh(db_animal)

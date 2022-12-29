@@ -46,8 +46,8 @@ def create_animal_for_caretaker(caretaker_id: int,animal: schemas.AnimalCreate, 
 
 @app.get("/animals/", response_model=list[schemas.Animal])
 def read_animals(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
-    users = crud.get_animals(db, skip=skip, limit=limit)
-    return users
+    animals = crud.get_animals(db, skip=skip, limit=limit)
+    return animals
 
 
 @app.get("/animals/{animal_id}", response_model=schemas.Animal)
@@ -56,7 +56,7 @@ def read_animal(animal_id: int, db: Session = Depends(get_db)):
     return db_animal
 
 
-@app.post("/toys/{animal_id}/toys/", response_model=schemas.Toy)
+@app.post("/toys/{animal_id}", response_model=schemas.Toy)
 def create_toy_for_animal(animal_id: int, toy: schemas.ToyCreate, db: Session = Depends(get_db)):
     return crud.create_animal_toy(db=db, toy=toy, animal_id=animal_id)
 

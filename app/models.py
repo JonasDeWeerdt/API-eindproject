@@ -19,6 +19,7 @@ class Animal(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     gender = Column(String)
+    fact = Column(String)
     hashed_name = Column(String)
     caretaker_id = Column(Integer, ForeignKey("caretakers.id"))
 
