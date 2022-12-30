@@ -1,6 +1,9 @@
 # API-project
 Ik heb gekozen voor het thema dieren. Ik kan een caretaker maken die een oneindige hoeveelheid dieren kan hebben en elk dier kan een oneindige hoeveelheid toys hebben. Ik heb hiervoor gekoezen omdat ik op deze manier kon verder bouwen op mijn vorige project. Als aanvullingen heb ik all tresting toegevoegd en een externe API callen.
-# Hosted API
+
+
+ 
+ # Hosted API
 https://animal-service-jonasdeweerdt.cloud.okteto.net
 
 # Caretaker
@@ -15,7 +18,14 @@ Laat de caretaker met het meegegeven id zien.
 Laat de dieren zijn met de toys die aan hun gelinked zijn.
 
 # Toys
+![image](https://user-images.githubusercontent.com/91122941/210086680-b818af95-cab7-4e76-880c-9945a4a9733f.png)
 
+# Extra
+Bij elke get die meerdere lijnen leest is er een skip en limit value als querry parameters die respectievelijk op default 0 en 100
+staan. Maar ik kan dus ook limiteren dat hij er maar 2 laat zien bijvoorbeeld.
+![image](https://user-images.githubusercontent.com/91122941/210087004-878b8c22-234d-4d33-8857-05e465f5922d.png)
+![image](https://user-images.githubusercontent.com/91122941/210087029-d04b2750-b50f-4a40-b0bd-c23aa23c0187.png)
+Hier start het dus bij id:2 omdat de skip value op 1 stond en hij dus de eerste skipt.
 
 
 # POST
