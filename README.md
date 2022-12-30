@@ -16,11 +16,22 @@ Laat de dieren zijn met de toys die aan hun gelinked zijn.
 
 # POST
 ![image](https://user-images.githubusercontent.com/91122941/210085492-82e1a98f-2465-4e95-974e-890b8a14d5f8.png)
-Dit gaat niet omdat deze email al gebruikt wordt in de database en de column email stond op unique.
+Dit gaat niet omdat deze email al gebruikt wordt in de database en de column "email" stond op unique.
 ![image](https://user-images.githubusercontent.com/91122941/210085560-aa8b05c7-d37a-47df-b976-ce1b504f8d70.png)
 ![image](https://user-images.githubusercontent.com/91122941/210085710-1d6048d3-bbbf-4af8-b770-171ac48ada08.png)
 ![image](https://user-images.githubusercontent.com/91122941/210085962-c6e690f5-29f7-43a6-a8d4-514d56c093a1.png)
 
 
 # DOCS
+![image](https://user-images.githubusercontent.com/91122941/210086219-6dc1ca93-c99d-4f10-935a-762a88ebd159.png)
+![image](https://user-images.githubusercontent.com/91122941/210086283-ec6f4353-ce5b-4d29-a603-1a489ba1f060.png)
+![image](https://user-images.githubusercontent.com/91122941/210086299-208b703c-ab9a-446b-b6bb-8a03b5434f1d.png)
+![image](https://user-images.githubusercontent.com/91122941/210086316-2112a8d6-025b-42cf-8fc2-b6e3c1db08b4.png)
+![image](https://user-images.githubusercontent.com/91122941/210086348-7b4a7c96-b0a6-4dd8-b23d-39b7cd90f051.png)
+![image](https://user-images.githubusercontent.com/91122941/210086368-2c75b6cf-1294-478e-8639-0e1e6e576ee0.png)
+![image](https://user-images.githubusercontent.com/91122941/210086390-c3004e87-9be8-42a0-a17c-dd5b09fbe246.png)
+![image](https://user-images.githubusercontent.com/91122941/210086398-e345d21e-67e3-47c5-981f-bda7ddb70216.png)
+![image](https://user-images.githubusercontent.com/91122941/210086412-dcebe0eb-93b5-4f10-bd44-40a916d8c28b.png)
+![image](https://user-images.githubusercontent.com/91122941/210086432-3df82ce5-4024-4ee5-bf6f-12e002729f3f.png)
+![image](https://user-images.githubusercontent.com/91122941/210086454-e299b90b-761c-4cdb-b3fa-54e32ee68c42.png)
 
