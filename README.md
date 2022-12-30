@@ -5,8 +5,9 @@ https://animal-service-jonasdeweerdt.cloud.okteto.net
 
 # Caretaker
 ![image](https://user-images.githubusercontent.com/91122941/210085157-fb8cf808-1a02-4bba-abe9-d013e0103f64.png)
+Laat alle caretakers zien.
 ![image](https://user-images.githubusercontent.com/91122941/210083905-4f95f115-4474-41d6-8008-d74501d3310d.png)
-
+Laat de caretaker met het meegegeven id zien.
 
 # Animal
 ![image](https://user-images.githubusercontent.com/91122941/210085206-175dda79-53fe-4065-aac6-9127961fc8b1.png)
