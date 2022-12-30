@@ -14,6 +14,9 @@ Laat de caretaker met het meegegeven id zien.
 ![image](https://user-images.githubusercontent.com/91122941/210085253-50686c71-457c-4851-a38b-1cef9a3e55b0.png)
 Laat de dieren zijn met de toys die aan hun gelinked zijn.
 
+# Toys
+
+
 
 # POST
 ![image](https://user-images.githubusercontent.com/91122941/210085492-82e1a98f-2465-4e95-974e-890b8a14d5f8.png)
