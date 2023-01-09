@@ -35,6 +35,8 @@ Dit gaat niet omdat deze email al gebruikt wordt in de database en de column "em
 ![image](https://user-images.githubusercontent.com/91122941/210085710-1d6048d3-bbbf-4af8-b770-171ac48ada08.png)
 ![image](https://user-images.githubusercontent.com/91122941/210085962-c6e690f5-29f7-43a6-a8d4-514d56c093a1.png)
 
+# Pytest
+![image](https://user-images.githubusercontent.com/91122941/211290285-6aa83e0b-1433-4986-b8c3-81f4112a6497.png)
 
 # DOCS
 ![image](https://user-images.githubusercontent.com/91122941/210086219-6dc1ca93-c99d-4f10-935a-762a88ebd159.png)
